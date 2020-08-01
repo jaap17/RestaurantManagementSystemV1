@@ -2,12 +2,13 @@
 <html>
 	<head> 
 		<title>Sign Up Page</title> 
+		<link href="css/style.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
 		
 		<center> <h1>Lovato RESTAURANT </h1></center><br>
-		<nav>
-			
+		<nav class="nav">
+			<img src="images/logo.jpg" height="50" width="100">
 
 			<a href="index.html">Home</a>
 			<a href="aboutus.html">About Us</a>
@@ -16,45 +17,51 @@
 			<a href="Tablebooking.html">Book Table</a>
 			<a href="login.html">Login</a>
 		</nav>
-		<h2>SignUp Form</h2><br>
-		<table>
+		
+		<table cellpadding="20" class="signuptable" align="center" style="margin-top: 40px;">
 			<form action="">
+				<tr colspan="2">
+					<td><h2>SignUp Form</h2></td>
+				</tr>
 				<tr>
-					<td><label for="firstname" >First Name</label></td>
-					<td><input type="text" value="Ajay"></td>
+					<td><label for="firstname">First Name</label></td>
+					<td><input type="text" value="Ajay" style="width: 100%;"></td>
 				</tr>
 				
 				<tr>
 					<td><label for="lastname">Last Name</label></td>
-					<td><input type="text"  value="Patel"></td>
+					<td><input type="text"  value="Patel" style="width: 100%;"></td>
 				</tr>
 			
 				<tr>
 					<td><label for="email" >Email</label></td>
-					<td><input type="email" value="ajayapatel13@gmail.com"></td>
+					<td><input type="email" value="ajayapatel13@gmail.com" style="width:100%;"></td>
 				</tr>
 				
 				<tr>
 					<td><label for="dateofbirth" >Birthday:</label></td>
-					<td><input type="date"> <br><br></td>
+					<td><input type="date" style="width: 100%;"> <br><br></td>
 				</tr>
 				<tr>
 					<td><label for="password">Password</label></td>
-					<td><input type="password" value="ajay1234"> </td>
+					<td><input type="password" value="ajay1234" style="width: 100%;"> </td>
 				</tr>
 				<tr>
 					<td><label for="confirm-password">Re-enter Password</label></td>
 					<td><input type="password" value="ajay1234"></td>
 				</tr>
-			<input type="submit" value="Submit"> 
+				<tr>
+					<td><input type="submit" value="Submit" id="btn"> </td>
+				</tr>
+			
 		</form>
 		</table>
 		
 		
 	</body>
 	
-	<footer>
-		© 2020 lovato, Inc. All rights reserved.Contact us at Phone-no:(0265)9874412 or email-id:lovatorestaurants@gmail.com
+	<footer class="footer">
+		<h1>© 2020 lovato, Inc. All rights reserved.Contact us at Phone-no:(0265)9874412 or email-id:lovatorestaurants@gmail.com</h1>
 	</footer>
 	</footer>
 </html>

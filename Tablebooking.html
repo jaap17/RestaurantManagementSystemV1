@@ -2,13 +2,14 @@
 <html>
 	<head>
 		<title>Homepage</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css">
 	</head>
 	
 	<body>
 		<center> <h1>Lovato RESTAURANT </h1></center><br>
 		
-		<nav>
-			
+		<nav class="nav">
+			<a href="index.html"><img src="images/logo.jpg" height="50" width="100"></a>
 			<a href="index.html">Home</a>
 			<a href="aboutus.html">About Us</a>
 			<a href="menucategories.html">Menu</a>
@@ -17,40 +18,41 @@
 			<a href="login.html">Login</a>
 		</nav>
 		<br><br>
-		<p>Already have an account!! <a href="#">Login</a> to book the table</p>
+		<p><font size="5">Don't have an account?  <a href="signup.html">Sign Up</a> to book the table</font></p>
 		<form>
-			<table cellpadding="10">
-				<tr>
-					<td><label for="firstname">First name</label></td>
-					<td><input type="text" name="#"></td>
-				</tr>
-				<tr>
-					<td><label for="customer-id">Customer-Id (If there exist an account already)</label></td>
-					<td><input type="text" name="#"></td>
-				</tr>
-				<tr>
-					<td><label for="dateofbooking">Date Of booking</label></td>
-					<td><input type="date"></td>
-				</tr>
-				<tr>
-					<td>Enter the number of people for whom the table has to be booked</td>
-					<td><input type="number"></td>
-				</tr>
-				<tr>
-					<td>
-						Enter the 10-digit Mobile Number
-					</td>
-					<td> <input type="text" maxlength="10" minlength="10"></td>
-				</tr>
-				<tr>
-					<td><input type="submit" value="Submit"><br><br></td>
-				</tr>
-			</table>
-			
+			<center>
+				<table cellpadding="20" class="tableofbooking"> 
+					<tr>
+						<td><label for="firstname">First name</label></td>
+						<td><input type="text" name="#" style="width: 100%;border-radius:20px;"></td>
+					</tr>
+					<tr>
+						<td><label for="customer-id">Customer-Id (If there exist an account already)</label></td>
+						<td><input type="text" style="width: 100%;border-radius: 20px;"></td>
+					</tr>
+					<tr>
+						<td><label for="dateofbooking">Date Of booking</label></td>
+						<td><input type="date" style="border-radius: 20px;"></td>
+					</tr>
+					<tr>
+						<td>Number of People</td>
+						<td><input type="number" style="border-radius: 20px;"></td>
+					</tr>
+					<tr>
+						<td>
+							Enter the 10-digit Mobile Number
+						</td>
+						<td> <input type="text" maxlength="10" minlength="10" style="border-radius: 20px;"></td>
+					</tr>
+					<tr>
+						<td><input type="submit" value="Submit" id="btn"><br><br></td>
+					</tr>
+				</table>
+			</center>
 			
 		</form>
 	</body>
-	<footer>
-		© 2020 lovato, Inc. All rights reserved.Contact us at Phone-no:(0265)9874412 or email-id:lovatorestaurants@gmail.com
+	<footer class="footer">
+		<h2>© 2020 lovato, Inc. All rights reserved.Contact us at Phone-no:(0265)9874412 or email-id:lovatorestaurants@gmail.com</h2>
 	</footer>
 </html>

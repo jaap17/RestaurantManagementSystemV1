@@ -1,0 +1,214 @@
+.navimg{
+    border:2px blue solid;
+    box-sizing: border-box;
+    background-color: chocolate;
+}
+.navimg li
+{
+    /*background-image:url('../images/dessert1.jpg');
+    background-repeat: no-repeat;
+    opacity: 1;
+    height: 600px;
+    width: 2000px;*/
+    list-style: none;
+    padding-right: 50px;
+   
+}
+
+.nav{
+    margin-top: 0px;
+    background-color:lightcoral;
+    opacity: 0.75;
+    width:100%;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+   
+}
+.nav a{
+    text-decoration: none;
+    color:blue;
+    opacity: 1;
+    font-size: 30px;
+    padding: 50px;
+    
+}
+
+.nav a:hover{
+    color:red;
+}
+
+.nav li{
+    list-style: none;
+    padding-top:20px ;
+    margin-left: 80px;
+}
+
+.tableofoptions
+{
+    margin-left: 60px;
+    border:1px black solid;
+    box-sizing: border-box;
+    background-color:#FFB6C1;
+    width: 80%;
+}
+
+.tableofoptions a
+{
+    color:red;
+    text-decoration: none;
+}
+
+.tableofoptions a:hover
+{
+    color: blue;
+}
+
+.footer{
+    background-color: rosybrown;
+    font-size: 20px;
+    height: 150px;
+}
+
+.table
+{
+    border: 1px black solid;
+    
+    box-sizing: border-box;
+    background-color: #333;
+    color: white;
+    width: 30%;
+    height: 400px;
+    padding: 80px;
+}
+
+#btn
+{
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 20px;
+    background-color: transparent;
+    color: blue;
+}
+
+#btn:hover{
+    background-color: red;
+}
+
+body
+{
+    background-color: silver;
+}
+
+.signuptable
+{
+    font-size: 30px;
+    border: 1px black solid;
+    box-sizing: border-box;
+    background-color: #333;
+}
+
+.aboutusinfo
+{
+    border: 1px chocolate solid;
+    box-sizing: border-box;
+    background-color: cornflowerblue;
+    line-height: 2.6em;
+}
+
+.aboutusinfo a:hover
+{
+    color: crimson;
+}
+
+.tableofbooking
+{
+    border: 1px crimson solid;
+    box-sizing: border-box;
+    background-color: darkmagenta;
+    font-size: 30px;
+    align-self:center;
+}
+
+.desserttable
+{
+    border:1px darkmagenta solid;
+    box-sizing: border-box;
+    background-color:coral;
+}
+
+.adminlogin
+{
+    border: 1px coral solid;
+    box-sizing: border-box;
+    background-color:seashell;
+    margin-bottom: 30px;
+    height: 400px;
+    width:700px;
+}
+
+.admintask
+{
+    margin-top: 30px;
+    border: 2px springgreen solid;
+    box-sizing: border-box;
+    background-color: tan;
+    width: 700px;
+}
+
+#btn1
+{
+    background-color: thistle;
+    border-radius: 20px;
+    width: 100%;
+    height: 50px;
+    font-size: 30px;
+}
+
+#btn1:hover
+{
+    background-color:cornflowerblue;
+}
+
+.admintask tr:nth-child(odd)
+{
+    background-color:rgb(95, 160, 120);
+
+}
+.admintask tr:nth-child(even)
+{
+    background-color: darkcyan;
+}
+
+.feedbackform
+{
+    font-size: 30px;
+    border: 2px darkblue solid;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: darkkhaki;
+}
+
+.starters
+{
+    border: 1px white solid;
+    box-sizing: border-box;
+    background-color: white;
+    margin-bottom: 40px;
+}
+
+.starterlist
+{
+    border: 2px #FFB6C1 solid;
+    box-sizing: border-box;
+    background-color: cornflowerblue;
+    width: 500px;   
+    list-style: none;
+}
+
+.starterlist h2
+{
+    font-size: 25px;
+    color: darkgreen;
+    font-family: Arial, Helvetica, sans-serif;
+}

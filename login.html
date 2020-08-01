@@ -1,14 +1,15 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Homepage</title>
+		<title>Login Page</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css">
 	</head>
 	
 	<body>
-	
-		<center> <h1>Lovato RESTAURANT </h1></center><br>
-		<nav>
-			
+		<center> <h1>LOVATO RESTAURANT </h1></center><br>
+
+		<nav class="nav">
+			<img src="images/logo.jpg" height="50" width="100">
 			<a href="index.html">Home</a>
 			<a href="aboutus.html">About Us</a>
 			<a href="menucategories.html">Menu</a>
@@ -17,21 +18,23 @@
 			<a href="login.html">Login</a>
 		</nav>
 		<center>
-			
-		<h1>
+			<br><br>
+		<h1 class="table">
 				Login Page <br><br>
-				<input type="text" placeholder="--Username--">
+				<input type="text" placeholder="--Username--" style="width: 100%;height:20px;">
 				
 				<br><br>
 				
 				
-				<input type="password" placeholder="--Password--"><br><br>
+				<input type="password" placeholder="--Password--" style="width: 100%;height: 20px;"><br><br>
 				
-				<input type="submit" value="submit">
-		</h1>	</center>
+				<input type="submit" value="Login" id="btn">
+				<a href="signup.html" style="float: right;">Sign Up</a>
+		</h1>
+		
 	</body>
-	<footer>
-		© 2020 Lovato Restaurant, Inc. All rights reserved.Contact us at Phone-no:(0265)9874412 or email-id:lovatorestaurants@gmail.com
+	<footer class="footer">
+		<h2>© 2020 Lovato Restaurant, Inc. All rights reserved.<br>Contact us at Phone-no:(0265)9874412 or email-id:lovatorestaurants@gmail.com</h2>
 	</footer>
 </html>
 	
