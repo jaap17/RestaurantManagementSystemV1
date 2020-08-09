@@ -3,6 +3,7 @@
 	<head>
 		<title>Login Page</title>
 		<link href="css/style.css" rel="stylesheet" type="text/css">
+		<script src="js/signup.js"></script>
 	</head>
 	
 	<body>
@@ -19,19 +20,21 @@
 		</nav>
 		<center>
 			<br><br>
-		<h1 class="table">
-				Login Page <br><br>
-				<input type="text" placeholder="--Username--" style="width: 100%;height:20px;">
-				
-				<br><br>
-				
-				
-				<input type="password" placeholder="--Password--" style="width: 100%;height: 20px;"><br><br>
-				
-				<input type="submit" value="Login" id="btn">
-				<a href="signup.html">Sign Up</a><br>
-				<a href="adminpanel.html" >Admin Panel</a>
-		</h1>
+		<form onsubmit="return validatelogin()">
+			<h1 class="table">
+					Login Page <br><br>
+					<input type="text" placeholder="--Username--" style="width: 100%;height:20px;" id="loginuser">
+					<label style="color:red;visibility:hidden;" id="lbluser" >Please Enter Username</label>
+					<br><br>
+					
+					
+					<input type="password" placeholder="--Password--" style="width: 100%;height: 20px;" id="loginpass"><br><br>
+					<label style="color:red;visibility:hidden;" id="lblpass">Please Enter Password</label>
+					<input type="submit" value="Login" id="btn"><br>
+					<a href="signup.html">Sign Up</a><br><br>
+					<a href="adminpanel.html" >Admin Panel</a>
+			</h1>
+		</form>
 		
 		<br><br>
 	</body>

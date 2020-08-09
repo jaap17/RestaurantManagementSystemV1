@@ -2,6 +2,7 @@
 <html>
     <head>
         <link href="css/style.css" rel="stylesheet" type="text/css">
+        <script src="js/signup.js"></script>
     </head>
     <body>
             <h1><center> LOVATO RESTAURANT </center></h1>
@@ -10,21 +11,37 @@
             <h1><center>Admin Login</center></h1>
             <br>
             <center>
-                <table class="adminlogin">
-                    <tr>
-                        <td><center><input type="text" placeholder="--Username--" style="width: 80%;border-radius: 20px;height: 40px;"></center>	<br><br></td>
-                    </tr>
-                    <tr>
-                        <td><center><input type="password" placeholder="--Password--" style="width: 80%;border-radius: 20px;height: 40px;"></center><br><br></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td><center><a href="adminhomepage.html"><input type="submit" value="Login" id="btn" style="width: 50%;"></a></center></td>
-                    </tr>
-                    
-                    
+               
+                <table class="adminlogin" >
+                    <form action="">
+                        <tr>
+                            <td><center><input type="text" placeholder="--Username--" style="width: 80%;border-radius: 20px;height: 40px;" id="adminuname"></center>	<br><br></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <center>
+                                    <label for="invaliduname" style="visibility: hidden;color: red;" id="lbluname"><h1>Please enter the Username</h1></label>
+                                </center>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><center><input type="password" placeholder="--Password--" style="width: 80%;border-radius: 20px;height: 40px;" id="adminpass"></center><br><br></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <center>
+                                    <label for="invalidpass" style="visibility: hidden;color: red;" id="lblpass"><h1>Please enter your Password</h1></label>
+                                </center>
+                                </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><center><input type="submit" value="Login" id="btn" style="width: 50%;" onclick="return adminlogin()"></center></td>
+                        </tr>
+                        
+                    </form>
                 </table>
             </center>
     </body>
