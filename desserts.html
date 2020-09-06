@@ -2,38 +2,102 @@
 <html>
     <head>
         <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     </head>
     <body>
-        <center> <h1>LOVATO RESTAURANT </h1></center><br>
+        <div class="jumbotron h1 mx-auto bg-success">
+			<center>LOVATO RESTAURANT</center>
+		</div>
 		
-		<nav class="nav">
-			<img src="images/logo.JPG" height="50" width="100">
-			<a href="index.html">Home</a>
-			<a href="aboutus.html">About Us</a>
-			<a href="menucategories.html">Menu</a>
-			<a href="signup.html">SignUp</a>
-			<a href="Tablebooking.html">Book Table</a>
-			<a href="login.html">Login</a>
-        </nav>
+		<nav class="navbar navbar-expand-md navbar-light  bg-info rounded-sm">
+            <a href="#">
+                <img src="images/logo.JPG" height="50" width="100">
+            </a>
+			<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div  class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <a href="index.html" class="nav-item nav-link h1 text-dark">Home</a>
+                    <a href="aboutus.html" class="nav-item nav-link h1 text-dark">About Us</a>
+                    <a href="menucategories.html" class="nav-item nav-link h1 text-dark">Menu</a>
+                    <a href="signup.html" class="nav-item nav-link h1 text-dark">SignUp</a>
+                    <a href="Tablebooking.html" class="nav-item nav-link h1 text-dark">Book Table</a>
+                    <a href="login.html" class="nav-item nav-link h1 text-dark">Login</a>
+                </div>
+                
+            </div>
+			
+		</nav>
         <br><br>
-        <table cellpadding="100" class="desserttable">
-            <tr>
-               <td><img src="images/dessert2.jpg" height="500" width="500"><br><h1> Special Oreo ICeCream Dessert</h1></td>
-               <td><img src="images/dessert3.jpg" height="500" width="500"><br><h1>Special Donuts</h1></br></td>
-               
-            </tr>
-            <tr>
-                <td><img src="images/blackcurrentkulfi.jpg" height="500" width="500"><br><h1>Black Current Kulfi</h1></td>
-                <td><img src="images/cookiesmoothie.jpg" height="500" width="500"><br><h1>Cookie Smoothie Dessert</h1></td>
-               
-            </tr>
-            <tr>
-                <td><img src="images/cookies.jpg" height="500" width="500"><br><h1>Sandwich ICeCream Dessert</h1></td>
-                <td><img src="images/cone.jpg" height="500" width="500"><br><h1>IceCream Cones</h1></td>
-               
-            </tr>
-        </table>
-
+       <div class="mx-auto bg-warning">
+           <br><br>
+            <div class="row">
+                <div class="col-md-6 mx-auto mb-5">
+                   <div class="card mx-auto img-thumbnail" style="width: 23rem;" >
+                        <img class="card-img-top" src="images/dessert2.jpg" alt="Card image cap" height="400" width="500" id="image">
+                        <div class="card-body h1 bg-primary ">
+                            Oreo Shake
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="col-md-6 mb-5">
+                    <div class="card mx-auto img-thumbnail" style="width: 23rem;">
+                         <img class="card-img-top" src="images/dessert3.jpg" alt="Card image cap"  height="400" width="500" id="image">
+                         <div class="card-body h1 bg-primary">
+                            Donuts
+                         </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-md-6 mb-5">
+                    <div class="card mx-auto img-thumbnail" style="width: 23rem;">
+                         <img class="card-img-top" src="images/blackcurrentkulfi.jpg" alt="Card image cap"  height="400" width="500" id="image"> 
+                         <div class="card-body h1 bg-primary">
+                            Kulfi
+                         </div>
+                    </div>
+                 </div>
+                 <br>
+                 <div class="col-xs-6 col-md-6 mb-5">
+                     <div class="card mx-auto img-thumbnail" style="width: 23rem;">
+                          <img class="card-img-top" src="images/cookiesmoothie.jpg" alt="Card image cap"  height="400" width="500" id="image">
+                          <div class="card-body h2 bg-primary">
+                             Cookie Smoothie
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-xs-6 col-md-6 mb-5">
+                    <div class="card mx-auto img-thumbnail" style="width: 23rem;">
+                         <img class="card-img-top" src="images/cookies.jpg" alt="Card image cap"  height="400" width="500" id="image">
+                         <div class="card-body h1 bg-primary">
+                            Sandwich Idli
+                         </div>
+                    </div>
+                </div><br>
+                 <div class="col-md-6 mb-5">
+                     <div class="card mx-auto img-thumbnail" style="width: 23rem;">
+                          <img class="card-img-top" src="images/cone.jpg" alt="Card image cap"  height="400" width="500" id="image">
+                          <div class="card-body h1 bg-primary">
+                            IceCream Cones
+                          </div>
+                     </div>
+                </div>
+            </div>
+            <br><br>
+        </div>
+        <br><br>
         <footer class="footer">
             <h2>© 2020 lovato, Inc. All rights reserved.<br>Contact us at Phone-no:(0265)9874412 or email-id:lovatorestaurants@gmail.com</h2>
         </footer>

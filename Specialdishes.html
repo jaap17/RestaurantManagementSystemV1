@@ -2,6 +2,11 @@
 <html>
     <head>
         <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     </head>
     <body>
         <!DOCTYPE html>
@@ -10,32 +15,44 @@
         <link href="css/style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <center> <h1>LOVATO RESTAURANT </h1></center><br>
-		
-		<nav class="nav">
-			<img src="images/logo.JPG" height="50" width="100">
-			<a href="index.html">Home</a>
-			<a href="aboutus.html">About Us</a>
-			<a href="menucategories.html">Menu</a>
-			<a href="signup.html">SignUp</a>
-			<a href="Tablebooking.html">Book Table</a>
-			<a href="login.html">Login</a>
-        </nav>
+        <div class="jumbotron h1 mx-auto bg-success">
+			<center>LOVATO RESTAURANT</center>
+		</div>
+		<nav class="navbar navbar-expand-md navbar-light  bg-info rounded-sm">
+            <a href="#">
+                <img src="images/logo.JPG" height="50" width="100">
+            </a>
+			<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div  class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <a href="index.html" class="nav-item nav-link h1 text-dark">Home</a>
+                    <a href="aboutus.html" class="nav-item nav-link h1 text-dark">About Us</a>
+                    <a href="menucategories.html" class="nav-item nav-link h1 text-dark">Menu</a>
+                    <a href="signup.html" class="nav-item nav-link h1 text-dark">SignUp</a>
+                    <a href="Tablebooking.html" class="nav-item nav-link h1 text-dark">Book Table</a>
+                    <a href="login.html" class="nav-item nav-link h1 text-dark">Login</a>
+                </div>
+                
+            </div>
+			
+		</nav>
         <br><br>
-        <table cellpadding="100" class="desserttable">
-            <tr>
-               <td><img src="images/risotto.webp" height="400" width="500"><br><h1> Roasted Bell Pepper Rissoto (Italian)</h1></td>
-               <td><img src="images/Vegfriedrice.JPG" height="400" width="500" style="border-radius: 10px;"><br><h1>Veg Fried Rice(Chinese)</h1></br></td>
+        <table cellpadding="100" class="desserttable mx-auto table-responsive">
+            <tr class="row mx-auto">
+               <td class="col-xs-6 col-md-6 mx-auto"><img src="images/risotto.webp" height="300" width="400" class="img-responsive"><br><h1> Roasted Bell Pepper Rissoto (Italian)</h1></td>
+               <td class="col-xs-6 col-md-6 mx-auto"><img src="images/Vegfriedrice.JPG" height="300" width="400" style="border-radius: 10px;"><br><h1>Veg Fried Rice(Chinese)</h1></br></td>
                
             </tr>
-            <tr>
-                <td><img src="images/panner.jpg" height="500" width="500"><br><h1>Peri Peri Paneer Pizza</h1></td>
-                <td><img src="images/lasaniyabatata.webp" height="500" width="500"><br><h1>Lasanya Batata</h1></td>
+            <tr class="row mx-auto">
+                <td class="col-xs-6 col-md-6 mx-auto"><img src="images/panner.jpg" height="300" width="400"><br><h1>Peri Peri Paneer Pizza</h1></td>
+                <td class="col-xs-6 col-md-6 mx-auto"><img src="images/lasaniyabatata.webp" height="300" width="400"><br><h1>Lasanya Batata</h1></td>
                
             </tr>
-            <tr>
-                <td><img src="images/dalmakhani.jfif" height="400" width="400"><br><h1>Dal Makhani</h1></td>
-                <td><img src="images/kolhapuri.jfif" height="400" width="400"><br><h1>Veg Kolhapuri</h1></td>
+            <tr class="row mx-auto">
+                <td class="col-xs-6 col-md-6 mx-auto"><img src="images/dalmakhani.jfif" height="300" width="400"><br><h1>Dal Makhani</h1></td>
+                <td class="col-xs-6 col-md-6 mx-auto"><img src="images/kolhapuri.jfif" height="300" width="400"><br><h1>Veg Kolhapuri</h1></td>
                
             </tr>
         </table>

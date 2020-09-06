@@ -1,3 +1,5 @@
+
+
 .navimg{
     border:2px blue solid;
     box-sizing: border-box;
@@ -67,6 +69,7 @@
     background-color: rosybrown;
     font-size: 20px;
     height: 150px;
+    
 }
 
 .table
@@ -96,18 +99,17 @@
     background-color: red;
 }
 
-body
-{
-    background-color: silver;
-}
+
 
 .signuptable
 {
     font-size: 30px;
     border: 1px black solid;
     box-sizing: border-box;
-    background-color: #333;
+    background-color: lightcoral;
+    color:#fff;
 }
+
 
 .aboutusinfo
 {
@@ -124,12 +126,16 @@ body
 
 .tableofbooking
 {
-    border: 1px crimson solid;
-    box-sizing: border-box;
-    background-color: darkmagenta;
+    box-sizing: border-box;   
     font-size: 30px;
     align-self:center;
+    margin:30px;
 }
+
+.tableofbooking tr{
+    background-color: lightseagreen;
+}
+
 
 .desserttable
 {
@@ -151,12 +157,10 @@ body
 .admintask
 {
     margin-top: 30px;
-    border: 2px springgreen solid;
     box-sizing: border-box;
     background-color: tan;
     width: 700px;
 }
-
 #btn1
 {
     background-color: thistle;
@@ -181,12 +185,17 @@ body
     background-color: darkcyan;
 }
 
-.feedbackform
+#feedbackform 
 {
     font-size: 30px;
-    border: 2px darkblue solid;
+    
     box-sizing: border-box;
     border-radius: 20px;
+    
+}
+
+#feedbackform tr{
+    border: 2px darkblue solid;
     background-color: darkkhaki;
 }
 
@@ -212,4 +221,69 @@ body
     font-size: 25px;
     color: darkgreen;
     font-family: Arial, Helvetica, sans-serif;
+}
+.footer
+{
+    padding: 25px;
+    width: 100%;
+    color:wheat;
+    line-height: 2em;
+    
+}
+@media(min-width:200px){
+    .footer{
+        overflow:scroll;
+        height: 400px;
+        width: 100%;
+        text-align: left;
+        font-size:25px;
+    }
+}
+@media(min-width:576px){
+  
+    .footer{
+        height: 275px;
+        width: 100%;
+        text-align: left;
+        font-size: 30px;
+    }
+}
+@media(min-width:768px){
+    .footer{
+        height: 150px;
+        width:992px;
+    }
+}
+@media(min-width:992px){
+    .footer{
+        height: 150px;
+        width:100%;
+    }
+}
+@media(min-width:1200px){
+    .footer{
+        height: 150px;
+        
+    }
+}
+
+.ahover:hover{
+    color:green;
+    font-size:50px;
+}
+
+.ahover a{
+    color:red;
+}
+
+#image:hover{
+    height: 600px;
+    width: 500px;
+    
+}
+
+#tablebox
+{
+   
+    box-sizing: border-box;
 }
