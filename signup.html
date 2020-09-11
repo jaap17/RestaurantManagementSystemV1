@@ -15,87 +15,109 @@
 		<div class="jumbotron h1 mx-auto bg-success">
 			<center>LOVATO RESTAURANT</center>
 		</div>
-		<nav class="navbar navbar-expand-md navbar-light  bg-info rounded-sm">
+		<nav class="navbar navbar-expand-lg navbar-light  bg-info rounded-sm">
             <a href="#">
                 <img src="images/logo.JPG" height="50" width="100">
             </a>
-			<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+			<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse" aria-expanded="false" aria-controls="navbarCollapse" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div  class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav">
-                    <a href="index.html" class="nav-item nav-link h1 text-dark">Home</a>
-                    <a href="aboutus.html" class="nav-item nav-link h1 text-dark">About Us</a>
-                    <a href="menucategories.html" class="nav-item nav-link h1 text-dark">Menu</a>
-                    <a href="signup.html" class="nav-item nav-link h1 text-dark">SignUp</a>
-                    <a href="Tablebooking.html" class="nav-item nav-link h1 text-dark">Book Table</a>
-                    <a href="login.html" class="nav-item nav-link h1 text-dark">Login</a>
-                </div>
+                <ul class="navbar-nav">
+                    <li>
+						<a href="index.html" class="nav-item nav-link h1 text-dark">Home </a>
+					</li>
+					<li>
+						<a href="aboutus.html" class="nav-item nav-link h1 text-dark">About Us </a>
+					</li>
+                    <li>
+						<a href="menucategories.html" class="nav-item nav-link h1 text-dark">Menu </a>
+					</li>
+					<li>
+						<a href="signup.html" class="nav-item nav-link h1 text-dark">SignUp </a>
+					</li>
+                    <li>
+						<a href="Tablebooking.html" class="nav-item nav-link h1 text-dark">Book Table </a>
+					</li>
+                   <li>
+						<a href="login.html" class="nav-item nav-link h1 text-dark">Login </a>
+				   </li>
+                   
+				</ul>
                 
             </div>
-			
 		</nav>
 		
-		<table cellpadding="20" class="signuptable table-responsive" align="center" style="margin-top: 40px;">
+		<table cellpadding="20" class="signuptable table-responsive mb-5" align="center" style="margin-top: 40px;">
 			<form action="" onsubmit="return validate()">
-				<tr colspan="2">
+				<tr colspan="2" >
 					<td><h2>SignUp Form</h2></td>
 				</tr>
-				<tr>
-					<td><label for="firstname">First Name</label></td>
-					<td><input type="text"  style="width: 100%;" id="fname" autofocus></td>
+				<tr class="row">
+					<td class="col-xs-6 col-md-6"><label for="firstname">First Name</label></td>
+					<td class="col-xs-6 col-md-6"><input type="text"  style="width: 100%;" id="fname" autofocus></td>
 				</tr>
-				<tr>
-					<td>
+				<tr class="row">
+					<td class="col-xs-6 col-md-6">
 						<label id="errfname" style="color: red;visibility: hidden;">Please enter your First Name</label>
 					</td>
 				</tr>
-				<tr>
-					<td><label for="lastname">Last Name</label></td>
-					<td><input type="text"   style="width: 100%;" id="lname"></td>
+				<tr class="row">
+					<td class="col-xs-6 col-md-6"><label for="lastname">Last Name</label></td>
+					<td class="col-xs-6 col-md-6"><input type="text"   style="width: 100%;" id="lname"></td>
 				</tr>
-				<tr>
-					<td>
+				<tr class="row">
+					<td class="col-xs-6 col-md-6">
 						<label id="errlname" style="color: red;visibility: hidden;">Please enter your Last Name</label>
 					</td>
 				</tr>
-				<tr>
-					<td><label for="email" >Email</label></td>
-					<td><input type="email"  style="width:100%;" name="email"></td>
+				<tr class="row">
+					<td class="col-xs-6 col-md-6"><label for="email" >Email</label></td>
+					<td class="col-xs-6 col-md-6"><input type="email"  style="width:100%;" name="email"></td>
 				</tr>
 				
-				<tr>
-					<td><label for="dateofbirth" >Birthday:</label></td>
-					<td><input type="date" style="width: 100%;"> <br><br></td>
+				<tr class="row">
+					<td class="col-xs-6 col-md-6"><label for="dateofbirth" >Birthday:</label></td>
+					<td class="col-xs col-md-6"><input type="date" style="width: 100%;"> <br><br></td>
 				</tr>
-				<tr>
-					<td><label for="password">Password</label></td>
-					<td><input type="password"  style="width: 100%;" minlength="8" id="pass"> </td>
+				<tr class="row">
+					<td class="col-xs-6 col-md-6"><label for="password">Password</label></td>
+					<td class="col-xs-6 col-md-6"><input type="password"  style="width: 100%;" minlength="8" id="pass"> </td>
 				</tr>
-				<tr>
-					<td>
+				<tr class="row">
+					<td class="col-xs-6 col-md-6">
 						<label id="errpass" style="color: red;visibility: hidden;">Please enter your Password</label>
 					</td>
 				</tr>
-				<tr>
-					<td><label for="confirm-password">Re-enter Password</label></td>
-					<td><input type="password" id="reenterpass" minlength="8"></td>
+				<tr class="row">
+					<td class="col-xs-6 col-md-6"><label for="confirm-password">Re-enter Password</label></td>
+					<td class="col-xs-6 col-md-6"><input type="password" id="reenterpass" minlength="8"></td>
 				</tr>
-				<tr>
-					<label id="errrepass" style="color: red;visibility: hidden;">Please enter Confirm Password</label>
+				<tr class="row">
+					
+					<td><label id="errrepass" style="color: red;visibility: hidden;">Please enter Confirm Password</label></td>
 				</tr>
-				<tr>
-					<td><input type="submit" value="Submit" id="btn"> </td>
+				<tr class="row">
+					<td class="col-xs-6 col-md-6"><input type="submit" value="Submit" id="btn"> </td>
 				</tr>
 			
 		</form>
 		</table>
-		
-		
+		<div class="container-fluid bg-dark">
+			<p class="display-3" style="color:beige">
+				Already have an Account? Click <a href="login.html"> Here </a> to go to the Login Page
+			</p>
+		</div>
+		<br><br>
 	
 	<br><br>
 	<footer class="footer">
-		<h1>© 2020 lovato, Inc. All rights reserved.Contact us at Phone-no:(0265)9874412 or email-id:lovatorestaurants@gmail.com</h1>
+		<div class="container-fluid">
+			<p>
+				<h2>© 2020 lovato, Inc. All rights reserved.<br>Contact us at Phone-no:(0265)9874412 or email-id:lovatorestaurants@gmail.com</h2>
+			</p>
+		</div>
+		
 	</footer>
 </body>
 </html>

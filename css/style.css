@@ -191,12 +191,8 @@
     
     box-sizing: border-box;
     border-radius: 20px;
-    
-}
-
-#feedbackform tr{
-    border: 2px darkblue solid;
     background-color: darkkhaki;
+    border:1px darkmagenta solid;
 }
 
 .starters
@@ -224,15 +220,15 @@
 }
 .footer
 {
+    bottom:0px;
     padding: 25px;
     width: 100%;
     color:wheat;
     line-height: 2em;
-    
 }
 @media(min-width:200px){
     .footer{
-        overflow:scroll;
+        overflow: scroll;
         height: 400px;
         width: 100%;
         text-align: left;
@@ -284,6 +280,19 @@
 
 #tablebox
 {
-   
+    height: 1000px;
+    line-height: 50%;
     box-sizing: border-box;
+}
+
+#image1:hover{
+    height: 500px;
+    width: 600px;
+    
+}
+
+#rowcolor
+{
+    background-color:darkturquoise;
+    color:white
 }

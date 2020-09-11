@@ -15,63 +15,87 @@
 			<center>LOVATO RESTAURANT</center>
 		</div>
 		
-		<nav class="navbar navbar-expand-md navbar-light  bg-info rounded-sm">
+		<nav class="navbar navbar-expand-lg navbar-light  bg-info rounded-sm">
             <a href="#">
                 <img src="images/logo.JPG" height="50" width="100">
             </a>
-			<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+			<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse" aria-expanded="false" aria-controls="navbarCollapse" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div  class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav">
-                    <a href="index.html" class="nav-item nav-link h1 text-dark">Home</a>
-                    <a href="aboutus.html" class="nav-item nav-link h1 text-dark">About Us</a>
-                    <a href="menucategories.html" class="nav-item nav-link h1 text-dark">Menu</a>
-                    <a href="signup.html" class="nav-item nav-link h1 text-dark">SignUp</a>
-                    <a href="Tablebooking.html" class="nav-item nav-link h1 text-dark">Book Table</a>
-                    <a href="login.html" class="nav-item nav-link h1 text-dark">Login</a>
-                </div>
+                <ul class="navbar-nav">
+                    <li>
+						<a href="index.html" class="nav-item nav-link h1 text-dark">Home </a>
+					</li>
+					<li>
+						<a href="aboutus.html" class="nav-item nav-link h1 text-dark">About Us </a>
+					</li>
+                    <li>
+						<a href="menucategories.html" class="nav-item nav-link h1 text-dark">Menu </a>
+					</li>
+					<li>
+						<a href="signup.html" class="nav-item nav-link h1 text-dark">SignUp </a>
+					</li>
+                    <li>
+						<a href="Tablebooking.html" class="nav-item nav-link h1 text-dark">Book Table </a>
+					</li>
+                   <li>
+						<a href="login.html" class="nav-item nav-link h1 text-dark">Login </a>
+				   </li>
+                   
+				</ul>
                 
             </div>
-			
 		</nav>
 		<br><br>
 		<p><font size="5">Don't have an account?  <mark><a href="signup.html" class="ahover">Sign Up</a></mark> to book the table</font></p>
 		<form>
-			<center>
-				<table cellpadding="20" class="tableofbooking table-responsive"> 
+			<div class="container">
+				<table cellpadding="20" class="tableofbooking table-responsive mb-5"> 
 					<tr class="row">
 						<td class="col-xs-6 col-md-12"><label for="firstname">First name</label></td>
-						<td class="col-xs-5 col-md-10 mx-auto"><input type="text" name="#" style="width: 90%;border-radius:20px;" autofocus ></td>
+						<td class="col-xs-5 col-md-12 mx-auto"><input type="text" name="#" style="width: 90%;border-radius:20px;" autofocus ></td>
 					</tr>
 					<tr class="row">
 						<td class="col-xs-6 col-md-12"><label for="customer-id">Customer-Id (If there exist an account already)</label></td>
-						<td class="col-xs-6 col-md-10 mx-auto"><input type="text" style="width: 90%;border-radius: 20px;"></td>
+						<td class="col-xs-6 col-md-12 mx-auto"><input type="text" style="width: 90%;border-radius: 20px;"></td>
 					</tr>
 					<tr class="row">
 						<td class="col-xs-6 col-md-12"><label for="dateofbooking">Date Of booking</label></td>
-						<td class="col-xs-6 col-md-10"><input type="date" style="width:80%;border-radius: 20px;"></td>
+						<td class="col-xs-6 col-md-12"><input type="date" style="width:90%;border-radius: 20px;"></td>
 					</tr>
 					<tr class="row">
 						<td class="col-xs-6 col-md-12">Number of People</td>
-						<td class="col-xs-6 col-md-12"><input type="number" style="width:80%;border-radius: 20px;"></td>
+						<td class="col-xs-6 col-md-12"><input type="number" style="width:90%;border-radius: 20px;"></td>
 					</tr>
 					<tr class="row">
 						<td class="col-xs-6 col-md-12">
 							Enter the 10-digit Mobile Number
 						</td>
-						<td class="col-xs-6 col-md-10"> <input type="text" maxlength="10" minlength="10" style="width:80%;border-radius: 20px;"></td>
+						<td class="col-xs-6 col-md-12"> <input type="text" maxlength="10" minlength="10" style="width:90%;border-radius: 20px;"></td>
 					</tr>
 					<tr class="row">
 						<td class="col-xs-6 col-md-12"><input type="submit" value="Submit" id="btn"><br><br></td>
 						<td></td>
 					</tr>
 				</table>
-			</center>
 			
 		</form>
+			</div>
+				
+		<div class="container-fluid bg-dark">
+			<p class="display-4" style="color:beige">
+				Already have an Account? Click <a href="login.html"> Here </a> to go to the Login Page
+			</p>
+		</div>
+		<footer class="footer">
+			<div class="container-fluid">
+				<p class="display-4">
+					© 2020 lovato, Inc. All rights reserved.Contact us at Phone-no:(0265)9874412 or email-id:lovatorestaurants@gmail.com
+				</p>
+			</div>
+			
+		</footer>
 	</body>
-	<footer class="footer">
-		<h2>© 2020 lovato, Inc. All rights reserved.Contact us at Phone-no:(0265)9874412 or email-id:lovatorestaurants@gmail.com</h2>
-	</footer>
+
 </html>
