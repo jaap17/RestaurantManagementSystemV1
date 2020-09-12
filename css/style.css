@@ -228,8 +228,8 @@
 }
 @media(min-width:200px){
     .footer{
-        overflow: scroll;
-        height: 400px;
+        overflow-y: scroll;
+        height: 500px;
         width: 100%;
         text-align: left;
         font-size:25px;
@@ -246,19 +246,19 @@
 }
 @media(min-width:768px){
     .footer{
-        height: 150px;
+        height: 275px;
         width:992px;
     }
 }
 @media(min-width:992px){
     .footer{
-        height: 150px;
+        height: 275px;
         width:100%;
     }
 }
 @media(min-width:1200px){
     .footer{
-        height: 150px;
+        height: 275px;
         
     }
 }

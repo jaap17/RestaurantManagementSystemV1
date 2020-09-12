@@ -13,7 +13,7 @@
         <div class="jumbotron h1 mx-auto bg-success">
 			<center>LOVATO RESTAURANT</center>
 		</div>
-        <nav class="navbar navbar-expand-lg navbar-light  bg-info rounded-sm">
+        <nav class="navbar navbar-expand-lg navbar-light  bg-info rounded-sm mb-5">
             <a href="#">
                 <img src="images/logo.JPG" height="50" width="100">
             </a>
@@ -46,14 +46,21 @@
             </div>
 		</nav>
         
-       <center>
+        <div class="container mb-4">
             <h1>Add Your Recipe</h1>
-            <textarea rows="30" cols="120" placeholder="--Add your recipe here--" id="textarea" autofocus></textarea><br><br><br>
-            <input type="submit" value="Submit" id="btn" style="width: 30%;" onclick="addrecipe()">
+            <div class="form-group">
+                <textarea placeholder="--Add your recipe here--" id="textarea" rows="40" class="form-control" autofocus></textarea>
+            </div>
+            <button type="button" class="btn btn-danger btn-block btn-lg" onclick="addrecipe()">
+                Submit
+            </button>
+           
             <p >
                <ul id="recipe"></ul> 
             </p>
-        </center>
+        </div>
+        
+       
         <footer class="footer">
             <div class="container-fluid">
                 <p>
