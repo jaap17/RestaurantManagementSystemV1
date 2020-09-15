@@ -8,7 +8,7 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 		<link href="css/style.css" rel="stylesheet" type="text/css">
-		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	</head>
 	
 	<body>
@@ -48,19 +48,27 @@
             </div>
 		</nav>
 		<br><br>
-		<p class="aboutusinfo">
-			<font size="6">
-				The lovato Restaurant is one of the finest multi-cuisine pure vegetarian restaurant.We use the best ingredients to prepare food for the customers. Our Team has well known
-				chefs from different parts of the country to amalgamate the different taste of INDIA. We serve food of different cuisines like North Indian , South Indian , Chinese , Mexican , Italian
-				, different types of custom icecreams , juices and shakes. Our restaurant has facilities like Elevator systems , online ordering system , online payment system , internal delivery system ,
-				feedback systems , recipe suggestions and Table booking. We select best possible ingredients and never compromise on the quality of food. Also our kitchen is properly sanitized and cleaned.
-				Our restaurant has been given many award in past by the Govt Of India for being a one of the best hotels taking care of all the necessary protocols.
-			
-				<br><br>
-				Click<a href="#">Here</a> To view details about our staff.
-			</font>
-			<br>
-		</p>
+		<div class="container">
+			<button type="button" value="Show Images" id="showinfo" class="btn btn-success">Show Information</button>
+		<button type="button" value="Hide Information" id="hideinfo" class="btn btn-warning">Hide Information</button><br>
+		</div>
+		<div class="container">
+			<br><br>
+			<p class="aboutusinfo">
+				<font size="6">
+					The lovato Restaurant is one of the finest multi-cuisine pure vegetarian restaurant.We use the best ingredients to prepare food for the customers. Our Team has well known
+					chefs from different parts of the country to amalgamate the different taste of INDIA. We serve food of different cuisines like North Indian , South Indian , Chinese , Mexican , Italian
+					, different types of custom icecreams , juices and shakes. Our restaurant has facilities like Elevator systems , online ordering system , online payment system , internal delivery system ,
+					feedback systems , recipe suggestions and Table booking. We select best possible ingredients and never compromise on the quality of food. Also our kitchen is properly sanitized and cleaned.
+					Our restaurant has been given many award in past by the Govt Of India for being a one of the best hotels taking care of all the necessary protocols.
+				
+					<br><br>
+					
+				</font>
+				<br>
+			</p>
+		</div>
+		
 		<section>
 			<br><br>
 			<div class="row mb-5">
@@ -69,27 +77,34 @@
 					<div class="card mx-auto img-thumbnail bg-success" style="width: 23rem;" >
 						<div class="card-header mx-auto h4">Head Chef</div>
 						 <img class="card-img-top" src="images/user.png" alt="Card image cap" height="400" width="400" id="image">
-						 <div class="card-footer mx-auto" style="font-size:30px;">
+						 <div class="card-footer mx-auto" style="font-size:30px;" id="det1">
 							 Name: Mr Abhay Patel<br>
 							 Age:48<br>
 							 Experience:23years<br>
 							 Speciality:Indian and Italian Cuisine
 
 						 </div>
+						 <hr>
+						 <button value="View Details" class="btn btn-danger" style="margin-bottom: 10px;" id="view1">View Details</button>
+						 <button value="Hide Details" class="btn btn-danger" id="hide1">Hide Details</button>
 					 </div>
 				</div>
 				<div class="col-md-6 mx-auto">
 					 <div class="card mx-auto img-thumbnail bg-success" style="width: 23rem;" >
 						<div class="card-header mx-auto h4">Senior Chef</div>
 						 <img class="card-img-top" src="images/user.png" alt="Card image cap" height="400" width="400" id="image">
-						 <div class="card-footer mx-auto" style="font-size:30px">
+						 <div class="card-footer mx-auto" style="font-size:30px" id="det2">
 							 Name: Mr Amay Verma<br>
 							 Age:38<br>
 							 Experience:12years<br>
 							 Speciality:Chinese and Chat Specialist
 
 						 </div>
+						 <hr>
+						 <button value="View Details" class="btn btn-danger" style="margin-bottom: 10px;" id="view2">View Details</button>
+						 <button value="Hide Details" class="btn btn-danger" id="hide2">Hide Details</button>
 					 </div>
+					
 				</div>
 			</div>
 			<div class="row mb-5">
@@ -98,39 +113,91 @@
 					<div class="card mx-auto img-thumbnail bg-success" style="width: 23rem;" >
 						<div class="card-header mx-auto h4">Chef</div>
 						 <img class="card-img-top" src="images/user.png" alt="Card image cap" height="400" width="400" id="image">
-						 <div class="card-footer mx-auto" style="font-size:30px;">
+						 <div class="card-footer mx-auto" style="font-size:30px;" id="det3">
 							 Name: Mr Jay Sharma<br>
 							 Age:33<br>
 							 Experience:10years<br>
 							 Speciality:Dessert Specialist
 
 						 </div>
+						 <hr>
+						 <button value="View Details" class="btn btn-danger" style="margin-bottom: 10px;" id="view3">View Details</button>
+						 <button value="Hide Details" class="btn btn-danger" id="hide3">Hide Details</button>
 					 </div>
 				</div>
 				<div class="col-md-6 mx-auto">
 					 <div class="card mx-auto img-thumbnail bg-success" style="width: 23rem;" >
 						<div class="card-header mx-auto h4">Junior Chef</div>
 						 <img class="card-img-top" src="images/user.png" alt="Card image cap" height="400" width="400" id="image">
-						 <div class="card-footer mx-auto" style="font-size:30px;">
+						 <div class="card-footer mx-auto" style="font-size:30px;" id="det4">
 							 Name: Mr Jalaj Saxena<br>
 							 Age:28<br>
 							 Experience:6years<br>
 							 Speciality:Sweet and Confectionary Expert
-
+							 
 						 </div>
+						 <hr>
+							 <button value="View Details" class="btn btn-danger" style="margin-bottom: 10px;" id="view4">View Details</button>
+							 <button value="Hide Details" class="btn btn-danger" id="hide4">Hide Details</button>
 					 </div>
 				</div>
 			</div>
-			
-		</section>
-	</body>
-	
-	<footer class="footer">
-		<div class="container-fluid">
-			<p>
-				<h2>© 2020 lovato, Inc. All rights reserved.<br>Contact us at Phone-no:(0265)9874412 or email-id:lovatorestaurants@gmail.com</h2>
-			</p>
-		</div>
 		
-	</footer>
+		</section>
+		<footer class="footer">
+			<div class="container-fluid">
+				<p>
+					<h2>© 2020 lovato, Inc. All rights reserved.<br>Contact us at Phone-no:(0265)9874412 or email-id:lovatorestaurants@gmail.com</h2>
+				</p>
+			</div>
+			
+		</footer>
+	</body>
+	<script>
+		$(document).ready(function(){
+			$("#hide4").click(function(){
+				$("#det4").hide();
+			});
+
+			$("#view4").click(function(){
+				$("#det4").show();
+			});
+
+			$("#hide3").click(function(){
+				$("#det3").hide();
+			});
+
+			$("#view3").click(function(){
+				$("#det3").show();
+			});
+
+			$("#hide2").click(function(){
+				$("#det2").hide();
+			});
+
+			$("#view2").click(function(){
+				$("#det2").show();
+			});
+
+			$("#hide1").click(function(){
+				$("#det1").hide();
+			});
+
+			$("#view1").click(function(){
+				$("#det1").show();
+			});
+
+			$("#showinfo").click(function(){
+				$(".aboutusinfo").show();
+			});
+
+			
+			$("#hideinfo").click(function(){
+				$(".aboutusinfo").hide();
+			});
+		})
+
+
+	</script>
+	
 </html>
